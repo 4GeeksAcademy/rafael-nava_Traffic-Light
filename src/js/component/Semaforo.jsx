@@ -29,10 +29,8 @@ const Semaforo = () => {
     return (
         <>
             <div className={styles.divboton}>
-                <button className={styles.button} onClick={() => {
-                    setIsVisible(!isVisible)
-                }
-                }>{isVisible ? "Desaparecer" : "Aparecer"}
+                <button className={styles.button} onClick={() => { setIsVisible(!isVisible)}}>
+                    {isVisible ? "Desaparecer" : "Aparecer"}
                 </button>
             </div>
             <div className={styles.contenedor}>
